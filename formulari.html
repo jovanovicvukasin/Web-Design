@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rad sa formularima</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form method="post" action="/register">
+            <label for="imeId">Ime:</label>
+            <input type="text" name="ime" id="imeId" required><br>
+            
+            <label for="procenatId">Procenat:</label>
+            <input type="number" name="procenat" id="procenatId"
+                   step="0.01" min="0" max="1" value="0.5" required><br>
+
+            <label for="emailId">Email:</label>
+            <input type="email" name="email" id="emailId" required><br>
+
+            <label for="telefonId">Telefon:</label>
+            <input type="phone" name="telefon" id="telefonId" required><br>
+
+            <label for="zaposlenId">Zaposlen:</label>
+            <input type="checkbox" name="zaposlen" id="zaposlenId" value="1"><br>
+        
+            <label for="">Kategorija:</label><br>
+            <input type="radio" name="kategorija" value="1" id="" checked>Kategorija 1<br>
+            <input type="radio" name="kategorija" value="2" id="">Kategorija 2<br>
+            <input type="radio" name="kategorija" value="3" id="">Kategorija 3<br>
+
+            <label for="adresaId">Adreasa:</label><br>
+            <textarea rows="6" name="adresa" id="adresaId" required></textarea><br>
+
+            <label for="opcijaId">Opcija:</label>
+            <select name="opcija" id="opcijaId">
+                <option value="1">Opcija 1</option>
+                <option value="2">Opcija 2</option>
+                <option value="3">Opcija 3</option>
+            </select><br>
+
+            <label for="opcId">Opcija 2:</label>
+            <input type="text" name="opcija2" id="opcId" list="spisak-opcija" required>
+            <datalist id="spisak-opcija">
+                <option value="Opcija 1">
+                <option value="Opcija 2">
+                <option value="Opcija 3">
+            </datalist><br>
+
+            <label for="opsegId">Opseg:</label>
+            <input type="range" name="opseg" id="opsegId" 
+            min="10" max="60" step="5"><br><br>
+
+            <button type="submit">Posalji</button><br>
+            <button type="reset">Ponisti</button><br>
+
+        </form>
+    </body>
+</html>
